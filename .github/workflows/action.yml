@@ -1,6 +1,7 @@
 name: "GLaDOS Auto Checkin"
 
 on:
+    workflow_dispatch:
     schedule:
         - cron: "01 16 * * *"
 

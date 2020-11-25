@@ -20,6 +20,6 @@ text = '签到失败'
 desp = 'https://glados.network/console/checkin'
 
 if data['code'] != 0:
-    print('签到失败')
+    print(text, data['message'])
     url = f'https://sc.ftqq.com/{server_sckey}.send?text={text}&desp={desp}'
     requests.get(url)

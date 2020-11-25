@@ -23,3 +23,5 @@ if data['code'] != 0:
     print(text, data['message'])
     url = f'https://sc.ftqq.com/{server_sckey}.send?text={text}&desp={desp}'
     requests.get(url)
+else:
+    print(data['code'], data['message'])

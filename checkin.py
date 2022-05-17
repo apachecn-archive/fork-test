@@ -11,7 +11,7 @@ headers = {
 }
 
 r = requests.post('https://glados.network/api/user/checkin',
-                  data={'token': "glados_network"},
+                  data={'token': "glados.network"},
                   headers=headers)
 data = r.json()
 
